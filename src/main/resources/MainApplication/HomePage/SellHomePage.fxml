@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-1.0" prefHeight="777.0" prefWidth="1232.0" stylesheets="@../../CSS/HomePage.CSS" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SaleHome.SaleHomePage">
+   <children>
+      <ImageView fitHeight="787.0" fitWidth="1240.0" layoutX="-3.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HPimage/BackgroudApp.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebeb9c" height="70.0" layoutX="534.0" layoutY="699.0" stroke="#ffffff00" strokeType="INSIDE" width="154.0" />
+      <Label layoutX="29.0" layoutY="456.0" />
+      <TableView fx:id="productTable" layoutX="44.0" layoutY="108.0" prefHeight="567.0" prefWidth="1149.0" styleClass="mica-effect">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="categoryCol" minWidth="16.0" prefWidth="99.0" text="Category" />
+          <TableColumn fx:id="nameCol" minWidth="16.0" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="cpuCol" minWidth="16.0" prefWidth="143.0" text="CPU" />
+            <TableColumn fx:id="ramCol" minWidth="16.0" prefWidth="85.0" text="RAM" />
+            <TableColumn fx:id="storageCol" minWidth="16.0" prefWidth="123.0" text="STORAGE" />
+            <TableColumn fx:id="displayCol" minWidth="16.0" prefWidth="144.0" text="DISPLAY" />
+            <TableColumn fx:id="priceCol" minWidth="16.0" prefWidth="124.0" text="PRICE" />
+            <TableColumn fx:id="userCol" prefWidth="96.0" text="BUYER" />
+            <TableColumn fx:id="quacol" prefWidth="113.0" text="QUANTITY" />
+        </columns>
+      </TableView>
+      <Label layoutX="630.0" layoutY="745.0" prefHeight="25.0" prefWidth="26.0" text="Pay" textFill="#176b87">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="189.0" layoutX="39.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../LoginScreen/imagelogin/logo2024.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iHome1" fitHeight="34.0" fitWidth="40.0" layoutX="626.0" layoutY="707.0" onMouseClicked="#payAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HPimage/PayView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="451.0" layoutY="69.0" prefHeight="26.0" prefWidth="167.0" text="Welcome to " textFill="#176b87">
+         <font>
+            <Font name="Verdana Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="namelabel" layoutX="593.0" layoutY="69.0" prefHeight="26.0" prefWidth="126.0" text="FULLNAME" textAlignment="CENTER" textFill="#176b87">
+         <font>
+            <Font name="Verdana Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="686.0" layoutY="69.0" prefHeight="26.0" prefWidth="97.0" text="'s cart" textFill="#176b87">
+         <font>
+            <Font name="Verdana Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iHome2" fitHeight="40.0" fitWidth="43.0" layoutX="553.0" layoutY="704.0" onMouseClicked="#Remove" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HPimage/RemoveView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="544.0" layoutY="745.0" prefHeight="25.0" prefWidth="58.0" text="Remove" textFill="#176b87">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="658.0" prefWidth="1173.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Profile.ProfileController">
+   <children>
+      <ImageView fitHeight="687.0" fitWidth="1201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff9e" height="580.0" layoutX="162.0" layoutY="48.0" stroke="#ffffff00" strokeType="INSIDE" width="923.0" />
+      <Circle fill="#ededed00" layoutX="624.0" layoutY="194.0" radius="49.0" stroke="#176b87" strokeType="INSIDE" />
+      <ImageView fitHeight="75.0" fitWidth="74.0" layoutX="587.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@usernamelogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="558.0" layoutY="68.0" prefHeight="75.0" prefWidth="158.0" text="PROFILE" textFill="#176b87">
+         <font>
+            <Font name="Dubai Medium" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailtext" layoutX="484.0" layoutY="364.0" prefHeight="51.0" prefWidth="567.0" text="Email" textFill="#176b87">
+         <font>
+            <Font name="#9Slide03 AmpleSoft Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullnametext" layoutX="484.0" layoutY="299.0" prefHeight="51.0" prefWidth="414.0" text="Fullname" textFill="#176b87">
+         <font>
+            <Font name="#9Slide03 AmpleSoft Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="525.0" prefHeight="30.0" prefWidth="125.0" text="Edit your profile" textFill="#176b87">
+         <font>
+            <Font name="Nirmala UI" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="682.0" layoutY="525.0" prefHeight="30.0" prefWidth="41.0" text=" Cart" textFill="#176b87">
+         <font>
+            <Font name="Nirmala UI" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="67.0" fitWidth="59.0" layoutX="493.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editprofile" fitHeight="51.0" fitWidth="41.0" layoutX="493.0" layoutY="479.0" onMouseClicked="#editprofile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Editprofile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="41.0" layoutX="682.0" layoutY="479.0" onMouseClicked="#switchtocart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../MainApplication/HomePage/HPimage/CartView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="374.0" layoutY="299.0" prefHeight="51.0" prefWidth="110.0" text="Fullname:" textFill="#176b87">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="364.0" prefHeight="51.0" prefWidth="110.0" text="Email:" textFill="#176b87">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="196.0" layoutY="62.0" onMouseClicked="#switchhomescene" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../MainApplication/HomePage/HPimage/HomeView.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="91.0" prefHeight="30.0" prefWidth="41.0" text=" Home" textFill="#176b87">
+         <font>
+            <Font name="Nirmala UI" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernametext" layoutX="575.0" layoutY="252.0" prefHeight="41.0" prefWidth="149.0" text="USERNAME" textAlignment="CENTER" textFill="#176b87" wrapText="true">
+         <font>
+            <Font name="#9Slide03 AmpleSoft Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
